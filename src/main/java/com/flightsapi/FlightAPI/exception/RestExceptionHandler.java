@@ -58,21 +58,3 @@ public class RestExceptionHandler implements ResponseErrorHandler {
     }
 }
 
-class ForbiddenException extends RuntimeException {
-    public ForbiddenException(String message) { super(message); }
-}
-
-class ResourceNotFoundException extends RuntimeException {
-    public ResourceNotFoundException(String message) { super(message); }
-}
-
-class InternalServerErrorException extends RuntimeException {
-    public InternalServerErrorException(String message) { super(message); }
-}
-
-class GeneralHttpException extends RuntimeException {
-    public GeneralHttpException(String message, String body) {
-        super(message + " Response Body: " + body);
-    }
-}
-

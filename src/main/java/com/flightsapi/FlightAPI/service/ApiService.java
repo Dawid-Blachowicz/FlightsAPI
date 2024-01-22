@@ -53,9 +53,9 @@ public class ApiService {
 
 
 
-    @PostConstruct
-    void run() {
-        AviationResponse data = getData();
-        log.info("{}", data);
-    }
+//    @PostConstruct
+//    void run() {
+//        AviationResponse data = getData();
+//        log.info("{}", data);
+//    }
 }
