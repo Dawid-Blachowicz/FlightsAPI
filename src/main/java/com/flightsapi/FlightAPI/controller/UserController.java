@@ -25,4 +25,9 @@ public class UserController {
     public List<User> getAllUsers() {
         return userService.getAllUsers();
     }
+
+    @PostMapping("/verify/{token}")
+    public String verifyUser(@PathVariable String token) {
+        return userService.verify(token);
+    }
 }

@@ -29,6 +29,9 @@ public class User {
     @Column(name = "password", nullable = false)
     private String password;
 
+    @Column(name = "is_enabled", nullable = false)
+    private boolean isEnabled = false;
+
     @ElementCollection(targetClass = String.class, fetch = FetchType.EAGER)
     private List<String> favouriteDepartures = new ArrayList<>();
 }
